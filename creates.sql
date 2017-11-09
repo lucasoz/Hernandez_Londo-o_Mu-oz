@@ -1,0 +1,29 @@
+CREATE DATABASE turicol;
+USE turicol;
+
+CREATE TABLE ASESOR(
+  codigo INT(10) NOT NULL,
+  cedula INT(15) NOT NULL UNIQUE,
+  nombre VARCHAR(30) NOT NULL,
+  salario INT(20) NOT NULL,
+  direccion VARCHAR(20) NOT NULL,
+  fecha_de_nacimiento DATE NOT NULL,
+  cliente_asesor INT(10),
+  PRIMARY KEY(codigo),
+  FOREIGN KEY(cliente_asesor)
+    REFERENCES ASESOR(codigo)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+
+)ENGINE=INNODB;
+
+CREATE TABLE CLIENTE(
+  cedula INT(10) PRIMARY KEY,
+  nombre VARCHAR(30) NOT NULL,
+  direccion VARCHAR(20) NOT NULL,
+  asesor INT(10) NOT NULL,
+  FOREIGN KEY(asesor)
+    REFERENCES ASESOR(codigo)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+)ENGINE=INNODB;

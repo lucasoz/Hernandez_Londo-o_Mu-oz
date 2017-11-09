@@ -1,0 +1,18 @@
+1. borrarAsesor.php contiene la interfaz correspondiente a borrar un asesor(seleccionaldo su codigo).
+2. borrarCliente.php contiene la interfaz de borrado de cliente (seleccionando su cedula).
+3. borrarsqlAsesor.php trae el codigo de acceso a la base de datos para borrar el asesor seleccionado en 1.
+4. borrarsqlCliente.php trae el codigo de acceso a la base de datos para borrar el cliente seleccionado en 2.
+5. busqueda1primero.php contiene la interfaz que trae  la busqueda 1 del trabajo.
+6. busqueda1resultado.php da como resultado la busqueda 1 habiendo seleccionado el asesor en 5.
+7. busqueda2primero.php contiene la interfaz que trae  la busqueda 2 del trabajo.
+8. busqueda2resultado.php da como resultado la busqueda 2 habiendo seleccionado el asesor en 7.
+9. conexion.php contiene el codigo necesario para establecer la coneccion con la base de datos.
+10. consulta.php contiene una interfaz con 3 botones correspondientes a las 3 consultas pedidas.
+11. consulta1sql.php da como resultado la consulta 1 luego de dar click en el primer boton de 10.
+12. consulta2sql.php da como resultado la consulta 2 luego de dar click en el primer boton de 10.
+13. consulta3sql.php da como resultado la consulta 3 luego de dar click en el primer boton de 10.
+14. creates.sql contiene el codigo SQL usado para la creacion de las 2 tablas aisladas en el trabajo.
+15. insertarAsesor.php contiene el codigo que accesa a la base de datos e inserta la tupla en la tabla asesor.
+16. insertarCliente.php contiene el codigo que accesa a la base de datos e inserta la tupla en la tabla cliente.
+17. registrarAsesor.php interfaz para agregar un asesor en la base de datos, luego se procede con 15.
+18. registrarCliente.php interfaz para agregar un cliente en la base de datos, luego se procede con 16.
